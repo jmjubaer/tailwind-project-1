@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind Project One</title>
+    <link rel="shortcut icon" href="img/icons/favicon.png" type="image/x-icon">
+    <!--============== Google fonts============= -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <!--======== fontawesome================ -->
+    <script src="https://kit.fontawesome.com/704f46da60.js" crossorigin="anonymous"></script>
+    <!--============ Tailwind css============== -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--================ Custom Css================= -->
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        black: '#363958',
+                        yellow: '#FABE4C',
+                    },
+                    fontFamily: {
+                        bebas: ["Bebas Neue", "cursive"],
+                        roboto: ['Roboto', "sans-serif"],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="text-black font-roboto">
+    <header class="bg-[#FFFBF0]">
+        <div class="jm_container">
+            <!--================ Navigation=============== -->
+            <nav class="flex justify-between py-9">
+                <div>
+                    <a href="#">
+                        <img class="w-48" src="img/icons/Group 33072.png" alt="">
+                    </a>
+                </div>
+                <div class="hidden md:block">
+                    <ul class="flex font-medium gap-14">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Product</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="block md:hidden">
+                    <img src="img/icons/bars-solid.svg" class="w-6 h-6" alt="">
+                </div>
+            </nav>
+            <!--=========== Banner area============== -->
+            <div class="banner_area md:flex items-center pb-28">
+                <div class="md:w-1\2 ">
+                    <div class="lg:w-2/3">
+                        <h1 class="font-bebas text-7xl"><span class="text-yellow">Be the Penguins</span> of Winter</h1>
+                        <p class="leading-6">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <button class="bg-gradient-to-t from-[#85A019] to-[#A4BC46] px-8 py-4 rounded-lg mt-2 text-white"><i class="fa-solid fa-cart-shopping mr-2"></i>BUY NOW</button>
+                    </div>
+                </div>
+                <div>
+                    <img class="mx-auto" src="img/model.png" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="jm_container">
+        <section class="mt-12 mb-24">
+            <h2 class="font-bebas text-5xl">W0Man Jacket</h2>
+            <div class="md:flex mt-5 gap-7 rounded-2xl" >
+                <div class="p-4 shadow-xl">
+                    <div class="p-5  rounded-2xl bg-[#F1F1F1]">
+                        <img class="mx-auto" src="img/jacket-1.png" alt="">
+                    </div>
+                    <h4 class="mt-4 font-bold text-2xl">Yellow Coat Jacket </h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <div class="flex md:flex-col lg:flex-row justify-between mt-3">
+                        <span class="text-yellow text-4xl font-bold">$234</span>
+                        <button class="bg-gradient-to-t from-[#85A019] to-[#A4BC46] px-8 py-4 rounded-lg text-white md:mt-3 lg:mt-0"><i class="mr-2 fa-solid fa-cart-shopping"></i>BUY NOW</button>
+                    </div>
+                </div>
+                <div class="p-4 shadow-xl rounded-2xl">
+                    <div class="p-5  rounded-2xl bg-[#F1F1F1]">
+                        <img class="mx-auto" src="img/jacket-2.png" alt="">
+                    </div>
+                    <h4 class="mt-4 font-bold text-2xl">Yellow Coat Jacket </h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <div class="flex  md:flex-col lg:flex-row justify-between mt-3">
+                        <span class="text-yellow text-4xl font-bold">$234</span>
+                        <button class="bg-gradient-to-t from-[#85A019] to-[#A4BC46] px-8 py-4 rounded-lg text-white md:mt-3 lg:mt-0"><i class="mr-2 fa-solid fa-cart-shopping"></i>BUY NOW</button>
+                    </div>
+                </div>
+                <div class="p-4 shadow-xl rounded-2xl">
+                    <div class="p-5  rounded-2xl bg-[#F1F1F1]">
+                        <img class="mx-auto" src="img/jacket-3.png" alt="">
+                    </div>
+                    <h4 class="mt-4 font-bold text-2xl">Yellow Coat Jacket </h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <div class="flex  md:flex-col lg:flex-row justify-between mt-3">
+                        <span class="text-yellow text-4xl font-bold">$234</span>
+                        <button class="bg-gradient-to-t from-[#85A019] to-[#A4BC46] px-8 py-4 rounded-lg text-white md:mt-3 lg:mt-0"><i class="mr-2 fa-solid fa-cart-shopping"></i>BUY NOW</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mt-12 mb-24">
+            <h2 class="font-bebas text-5xl">Man Jacket</h2>
+            <div class="md:flex mt-5 gap-7" >
+                <div class="p-4 shadow-xl rounded-2xl">
+                    <div class="p-5  rounded-2xl bg-[#F1F1F1]">
+                        <img class="" src="img/jacket-4.png" alt="">
+                    </div>
+                    <h4 class="mt-4 font-bold text-2xl">Yellow Coat Jacket </h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <div class="flex md:flex-col lg:flex-row justify-between mt-3">
+                        <span class="text-yellow text-4xl font-bold">$234</span>
+                        <button class="bg-gradient-to-t from-[#85A019] to-[#A4BC46] px-8 py-4 rounded-lg text-white md:mt-3 lg:mt-0"><i class="mr-2 fa-solid fa-cart-shopping"></i>BUY NOW</button>
+                    </div>
+                </div>
+                <div class="p-4 shadow-xl rounded-2xl">
+                    <div class="p-5  rounded-2xl bg-[#F1F1F1]">
+                        <img class="" src="img/jacket-5.png" alt="">
+                    </div>
+                    <h4 class="mt-4 font-bold text-2xl">Yellow Coat Jacket </h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <div class="flex md:flex-col lg:flex-row justify-between mt-3">
+                        <span class="text-yellow text-4xl font-bold">$234</span>
+                        <button class="bg-gradient-to-t from-[#85A019] to-[#A4BC46] px-8 py-4 rounded-lg text-white md:mt-3 lg:mt-0"><i class="mr-2 fa-solid fa-cart-shopping"></i>BUY NOW</button>
+                    </div>
+                </div>
+                <div class="p-4 shadow-xl rounded-2xl">
+                    <div class="p-5  rounded-2xl bg-[#F1F1F1]">
+                        <img class="" src="img/jacket-6.png" alt="">
+                    </div>
+                    <h4 class="mt-4 font-bold text-2xl">Yellow Coat Jacket </h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <div class="flex md:flex-col lg:flex-row justify-between mt-3">
+                        <span class="text-yellow text-4xl font-bold">$234</span>
+                        <button class="bg-gradient-to-t from-[#85A019] to-[#A4BC46] px-8 py-4 rounded-lg text-white md:mt-3 lg:mt-0"><i class="mr-2 fa-solid fa-cart-shopping"></i>BUY NOW</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="grid grid-cols-1 lg:grid-cols-5 gap-7 items-center my-32">
+                <div class="flex gap-5 justify-between col-span-2 shadow-xl py-5 px-7 rounded-2xl order-2 lg:order-1">
+                    <img class="w-20 h-20 object-cover" src="img/house.png" alt="">
+                    <div>
+                        <h5 class="text-2xl font-bold">Find the Perfect Fit</h5>
+                        <p class="leading-6 mt-3">Everybody is different, which is why we offer styles for every body.</p>
+                    </div>
+                </div>
+                <div class="row-span-3 col-span-3 order-1 lg:order-2">
+                    <img src="img/shopping.png" alt="">
+                </div>
+                <div class="flex gap-5 justify-between col-span-2 shadow-xl py-5 px-7 rounded-2xl order-3">
+                    <img class="w-20 h-20 object-cover" src="img/house.png" alt="">
+                    <div>
+                        <h5 class="text-2xl font-bold">Find the Perfect Fit</h5>
+                        <p class="leading-6 mt-3">Everybody is different, which is why we offer styles for every body.</p>
+                    </div>
+                </div>
+                <div class="flex gap-5 justify-between col-span-2 shadow-xl py-5 px-7 rounded-2xl order-4">
+                    <img class="w-20 h-20 object-cover" src="img/house.png" alt="">
+                    <div>
+                        <h5 class="text-2xl font-bold">Find the Perfect Fit</h5>
+                        <p class="leading-6 mt-3">Everybody is different, which is why we offer styles for every body.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
